@@ -1,0 +1,58 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Asset.master" AutoEventWireup="true" CodeFile="AsssetL.aspx.cs" Inherits="AsssetL" Title="Untitled Page" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="cphHeader">
+        
+            <table class="style1">
+                <tr>
+                    <td class="style2">
+                        <asp:Image ID="Image1" runat="server" Height="130px" 
+                            ImageUrl="~/Images/Assethead.jpg" Width="1167px" />
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style2">
+                        <table class="style1">
+                            <tr>
+                                <td valign="top" width="200">
+                                        <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" 
+                                            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                                            ForeColor="#990000" Orientation="Horizontal" 
+                                        StaticSubMenuIndent="10px" onmenuitemclick="Menu1_MenuItemClick">
+                                            <StaticSelectedStyle BackColor="#FFCC66" />
+                                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                                            <DynamicMenuStyle BackColor="#FFFBD6" />
+                                            <DynamicSelectedStyle BackColor="#FFCC66" />
+                                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                                            <Items>
+                                                <asp:MenuItem Text="Registration" Value="Registration">
+                                                    <asp:MenuItem NavigateUrl="~/AssetRegitration.aspx" Text="Asset Registration" 
+                                                        Value="Assetreg"></asp:MenuItem>
+                                                </asp:MenuItem>
+                                                <asp:MenuItem Text="View status" Value="viewstatus">
+                                                    <asp:MenuItem Text="Asset Details" Value="assetdetails"></asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        
+        
+
+</asp:Content>
+
+
